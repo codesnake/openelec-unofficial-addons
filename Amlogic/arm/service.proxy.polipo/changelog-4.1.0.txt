@@ -1,0 +1,12 @@
+4.1.0
+- convert to systemd service
+- rebuild for addon api bump
+
+4.0.1
+- rebuild
+
+4.0.0
+- rebuild for OpenELEC-4.0
+
+3.0.1
+- initial build based on polipo-20091115

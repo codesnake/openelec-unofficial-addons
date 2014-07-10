@@ -1,0 +1,108 @@
+[B]3.5.5[/B]
+- rebuild for addon api bump
+
+[B]3.5.4[/B]
+- rebuild
+
+[B]3.5.3[/B]
+ Fixed:
+ - Exception thrown right after installation of addon before exec permission is given
+   (before OpenELEC gets restarted) - user is notified that restart is needed. 
+
+[B]3.5.2[/B]
+ - rebuild for OpenELEC-4.0
+
+[B]3.5.1[/B]
+ - no changes. version bump only
+
+[B]3.5.0[/B]
+Added:
+ - Support for key files - creation, mounting, adding, changing and removing
+ - Support for hidden volumes - mounting with hidden volume protection, creation of container with hidden volume
+ - Possibility to mount volumes at start up
+ - Easier mounting of partition through guide -> mounting by drive id so it is persistent when different drives are connected
+ - Reason why some items are locked
+ - Detection of mount point being in use by other mounted volumes
+ - Mounting files without storing paths and mount points
+ - Added a little bit of color in the menu
+ - Possibility to use secondary shell script (development or testing)
+ - New settings
+ - Added strings.po language file, strings.xml is still kept
+ 
+ 
+ Changed:
+  - Debugging mode can only be turned on the XBMC debugging settings, errors are always written in the log  
+  - shell script has been rewritten to provide better flexibility 
+ 
+  
+[B]3.1.3[/B]
+
+Fixed:
+- Could not start up (ION version reported) --> fixed addon.xml
+
+[B]3.1.2[/B]
+- Put in unofficial OpenELEC repository
+
+[B]3.1.1[/B]
+Fixed:
+- Issue when mounting NTFS formated drives.
+
+
+[B]3.1.0[/B]
+Fixed:
+- Compatibility issue with OL 3.0.5 /3.0.6 (no workaround anymore)
+- "No child processes error" seams to be solved
+
+Added / improved
+- Debugging mode
+- Escaping of special characters in passwords before passed to shell script-  $ ' " \
+- Improved internal checks when mounting drive (fixed mounting same TC file to 2 loop devices)
+- Improved mount checks - able to recognize if mount point is in use by other file (for now in logs only)
+- Removed hard coded strings from settings
+
+Still to do:
+- support for key files
+- make compatible with XBMC 13
+
+3.0.7
+Fixed:
+- Compatibility issue of truecrpyt.sh with OL 3.0.5/ 3.0.6 --> migrated to ash shell, removed usage of arrays, removed bash syntax
+
+Still to do:
+- current version of truecrpyt.sh uses workaround - running mounting twice to make it work
+- better debugging possibilities 
+- support for key files
+- make compatible with XBMC 13
+
+
+3.0.6
+Fixed:
+- Wrong default path to the bash script in settings.xml
+- Removed error message "unmount failed" when unmounted correctly.
+
+Added / improved:
+- added possibility to create non existing folders for mount point.
+- added possibility to turn off mount checking
+- Improved escaping of special chars in passwords when mounting (thanks to andPS2)
+- added check for links when unmounting
+- improved localization possibilites.
+
+Still to do:
+- support for key files
+- make compatible with XBMC 13
+
+3.0.5
+- fixed addon.xml (thanks to smory)
+3.0.4
+- addon scripts by smory
+- addon renamed to plugin.program.truecrypt
+3.0.3
+- add missing libdevmapper.so library
+3.0.2
+- bump addon version
+2.1.3
+- container for script truecrypt-create-container.sh is read from settings.xml
+2.1.2
+- recompile for OpenELEC 2.0
+1.90.0
+- initial version of Truecrypt addon
