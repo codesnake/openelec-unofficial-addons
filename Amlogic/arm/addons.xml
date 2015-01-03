@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<addons>
+<addon id="tools.lftp"
+       name="lftp"
+       version="4.3.1"
+       provider-name="Stefan Saraev (seo at irc.freenode.net)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>ftp client</summary>
+    <description>
+LFTP is a sophisticated ftp/http client, and a file transfer program supporting a number of network protocols
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.downloadmanager.transmission"
+       name="transmission"
+       version="4.3.2"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>transmission: a fast, easy and free BitTorrent client</summary>
+    <description>
+transmission is a fast, easy and free BitTorrent client
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.program.smartmontools"
+       name="smartmontools"
+       version="4.3.0"
+       provider-name="Peter Smorada (smoradap@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+             library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.service"
+             library="service.py" start="startup">
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>S.M.A.R.T. disk monitoring tool with XBMC gui.</summary>
+    <description>
+S.M.A.R.T. disk monitoring tool with XBMC gui. This version is based on smartmontools v 6.2.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.diffutils"
+       name="diffutils"
+       version="4.3.1"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>GNU Diffutils</summary>
+    <description>
+GNU Diffutils is a package of several programs related to finding differences between files.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.multimedia.mpd"
+       name="mpd"
+       version="4.3.2"
+       provider-name="Lukas Sabota (LTsmooth42@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Flexible, powerful, server-side application for playing music</summary>
+    <description>
+Flexible, powerful, server-side application for playing music
+    </description>
+    <disclaimer>
+This may block your xbmc audio. It might also play no audio at all, if streamsilence is enabled and you try to use the very same device
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.system.tinc"
+       name="tinc"
+       version="4.3.1"
+       provider-name="Jean-Charles Andlauer (andlauer@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>tinc Virtual Private Network Daemon</summary>
+    <description>
+tinc is a virtual private network (VPN) daemon that uses tunnelling and encryption to create a secure private network between hosts on the Internet. Because the VPN appears to the IP level network code as a normal network device, there is no need to adapt any existing software. This allows VPN sites to share information with each other over the Internet without exposing any information to others.
+    </description>
+    <disclaimer>
+This is an unofficial addon. Do therefore not expect support from OpenELEC forum and irc channel.
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.unrar"
+       name="unrar"
+       version="4.3.0"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>unrar: Extract, test and view RAR archives</summary>
+    <description>
+Unrar is a package to handle files compressed in the RAR format. Due to strange licensing issues this package can only view, test and extract files in a given archive, but not pack files. But since we have far more advanced open-source compression utils it should be enough to extract the content when you get a RAR archive.
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.iw"
+       name="iw"
+       version="4.3.1"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>iw is a new nl80211 based CLI configuration utility for wireless devices</summary>
+    <description>
+iw is a new nl80211 based CLI configuration utility for wireless devices. It supports all new drivers that have been added to the kernel recently.
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.system.pcscd-addon"
+       name="pcscd-addon"
+       version="4.3.1"
+       provider-name="Stefan Saraev (seo at irc.freenode.net)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Middleware to access a smart card using SCard API (PC/SC)</summary>
+    <description>
+Middleware to access a smart card using SCard API (PC/SC)
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="network.analyzer.iftop"
+       name="iftop"
+       version="4.3.1"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>iftop: display bandwidth usage on an interface</summary>
+    <description>
+iftop does for network usage what top(1) does for CPU usage. It listens to network traffic on a named interface and displays a table of current bandwidth usage by pairs of hosts. Handy for answering the question 'why is our ADSL link so slow?'.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="shell.console.screen"
+       name="screen"
+       version="4.3.2"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>terminal multiplexor with VT100/ANSI terminal emulation</summary>
+    <description>
+screen is a terminal multiplexor that runs several separate screens on a single physical character-based terminal. Each virtual terminal emulates a DEC VT100 plus several ANSI X3.64 and ISO 2022 functions. Screen sessions can be detached and resumed later on a different terminal.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.system.proftpd"
+       name="proftpd"
+       version="4.3.2"
+       provider-name="vpeter4 (peter.vicman@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>Highly configurable GPL-licensed FTP server software</summary>
+    <description>
+Secure and configurable FTP server with SSL/TLS support
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.i2c-tools"
+       name="i2c-tools"
+       version="4.3.0"
+       provider-name="Dag Wieers (dag@wieers.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>i2c-tools: bus probing tool, eeprom decoding/programming and SMBus python interface</summary>
+    <description>
+The i2c-tools package contains a heterogeneous set of I2C tools for Linux: a bus probing tool, a chip dumper, register-level SMBus access helpers, EEPROM decoding scripts, EEPROM programming tools, and a python module for SMBus access.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.mc"
+       name="mc"
+       version="4.3.3"
+       provider-name="Stefan Saraev (seo at irc.freenode.net)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>mc: visual file manager</summary>
+    <description>
+GNU Midnight Commander is a visual file manager, licensed under GNU General Public License and therefore qualifies as Free Software. It's a feature rich full-screen text mode application that allows you to copy, move and delete files and whole directory trees, search for files and run commands in the subshell. Internal viewer and editor are included
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="lib.multimedia.w_scan"
+       name="w_scan"
+       version="4.3.2"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>w_scan: eine kleine Anwendung zum Scannen von ATSC/DVB-C/S/T Transpondern/Bouquets nach Sendern und Erstellen einer VDR channels.conf.</summary>
+    <description>
+w_scan ist eine kleine Anwendung zum Scannen von ATSC/DVB-C/S/T Transpondern/Bouquets nach Sendern und Erstellen einer VDR channels.conf.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="network.backup.rsync"
+       name="rsync"
+       version="4.3.0"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>rsync: A replacement for rcp that has many more features</summary>
+    <description>
+Rsync uses an own 'rsync' algorithm which provides a very fast method for bringing remote files into sync. It does this by sending just the differences in the files across the link, without requiring that both sets of files are present at one of the ends of the link beforehand. At first glance this may seem impossible because the calculation of diffs between two files normally requires local access to both files.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.patch"
+       name="patch"
+       version="4.3.2"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>GNU patch</summary>
+    <description>
+Patch takes a patch file containing a difference listing produced by the diff program and applies those differences to one or more original files, producing patched versions
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.powertop"
+       name="powertop"
+       version="4.3.1"
+       provider-name="Dag Wieers (dag@wieers.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>powertop: tool to diagnose issues with power consumption and power management</summary>
+    <description>
+PowerTOP is a Linux tool to diagnose issues with power consumption and power management. In addition to being a diagnostic tool, PowerTOP also has an interactive mode where the user can experiment various power management settings for cases where the Linux distribution has not enabled these settings.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.dstat"
+       name="dstat"
+       version="4.3.0"
+       provider-name="Dag Wieers (dag@wieers.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>dstat: versatile resource statistics tool</summary>
+    <description>
+Dstat is a versatile replacement for vmstat, iostat, netstat and ifstat. Dstat overcomes some of their limitations and adds some extra features, more counters and flexibility. Dstat is handy for monitoring systems during performance tuning tests, benchmarks or troubleshooting.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="plugin.network.dhcp"
+       name="dhcp"
+       version="4.3.1"
+       provider-name="Peter Smorada (smoradap@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>ISC DHCP is easy and efficient way to provide dhcp services</summary>
+    <description>
+ISC DHCP is open source software that implements the Dynamic Host Configuration Protocol for connection to an IP network. It is production-grade software that offers a complete solution for implementing DHCP servers, relay agents, and clients for small local networks to large enterprises. ISC DHCP solution supports both IPv4 and IPv6, and is suitable for use in high-volume and high-reliability applications. DHCP is available under the terms of the ISC License, a BSD style license.
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.hddtemp"
+       name="hddtemp"
+       version="4.3.1"
+       provider-name="Dag Wieers (dag@wieers.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>hddtemp: tool that reports hard drive temperature</summary>
+    <description>
+hddtemp is a small utility (daemonizable) that gives you the temperature of your hard drive by reading S.M.A.R.T. informations (for drives that support this feature).
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.autossh"
+       name="autossh"
+       version="4.3.0"
+       provider-name="none">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>ssh tool</summary>
+    <description>
+SSH tool to keep alive tunnels
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.wireless_tools"
+       name="wireless_tools"
+       version="4.3.0"
+       provider-name="Dag Wieers (dag@wieers.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>wireless-tools: tools allowing to manipulate the Wireless Extensions</summary>
+    <description>
+The Wireless Tools (WT) is a set of tools allowing to manipulate the Wireless Extensions. They use a textual interface and are rather crude, but aim to support the full Wireless Extension. There are many other tools you can use with Wireless Extensions, however Wireless Tools is the reference implementation.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.php"
+       name="php"
+       version="4.3.0"
+       provider-name="none">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>php: Scripting language especially suited for Web development</summary>
+    <description>
+PHP is a widely-used general-purpose scripting language that is especially suited for Web development and can be embedded into HTML.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.dtach"
+       name="dtach"
+       version="4.3.0"
+       provider-name="Daniel Forsberg (daniel.forsberg1@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>dtach - A program that emulates the detach feature of screen</summary>
+    <description>
+dtach - A program that emulates the detach feature of screen
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="network.testing.iperf"
+       name="iperf"
+       version="4.3.0"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>iperf: A modern alternative for measuring maximum TCP and UDP bandwidth performance</summary>
+    <description>
+Iperf was developed by NLANR/DAST as a modern alternative for measuring maximum TCP and UDP bandwidth performance. Iperf allows the tuning of various parameters and UDP characteristics. Iperf reports bandwidth, delay jitter, datagram loss.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.strace"
+       name="strace"
+       version="4.3.0"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>strace: Trace system calls and signals</summary>
+    <description>
+In the simplest case strace runs the specified command until it exits. It intercepts and records the system calls which are called by a process and the signals which are received by a process. The name of each system call, its arguments and its return value are printed on standard error or to the file specified with the -o option.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.hd-idle"
+       name="hd-idle"
+       version="4.3.1"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>hd-idle is a [Linux] utility program for spinning-down external disks after a period of idle time.</summary>
+    <description>
+hd-idle is a utility program for spinning-down external disks after a period of idle time. Since most external IDE disk enclosures don't support setting the IDE idle timer, a program like hd-idle is required to spin down idle disks automatically.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.evtest"
+       name="evtest"
+       version="4.3.0"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>evtest: Simple tool for input event debugging.</summary>
+    <description>
+evtest is a simple tool for input event debugging.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.nmap"
+       name="nmap"
+       version="4.3.0"
+       provider-name="none">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>network tool</summary>
+    <description>
+Free Security Scanned for Network
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.lm_sensors"
+       name="lm_sensors"
+       version="4.3.2"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>lm_sensors: Hardware monitoring via the SMBus</summary>
+    <description>
+lm_sensors is a package to get data from the SMB (System Management Bus - an i2c bus) on modern mainboards. It consists of kernel modules and users space tools to get stuff like cpu / mb temperature, voltages, fan speed...
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.softcam.oscam"
+       name="oscam"
+       version="4.3.2"
+       provider-name="Stefan Saraev (seo at irc.freenode.net)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>oscam: OSCam is Open Source Conditional Access Modul.</summary>
+    <description>
+OSCam is Open Source Conditional Access Modul.
+    </description>
+    <disclaimer>
+using oscam may be illegal in your country. if in doubt, do not install
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.smem"
+       name="smem"
+       version="4.3.0"
+       provider-name="Dag Wieers (dag@wieers.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>smem: memory reporting tool</summary>
+    <description>
+smem is a tool that can give numerous reports on memory usage on Linux systems. Unlike existing tools, smem can report proportional set size (PSS), which is a more meaningful representation of the amount of memory used by libraries and applications in a virtual memory system.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="debug.tools.htop"
+       name="htop"
+       version="4.3.1"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>htop: Htop is an ncurses based interactive process viewer for Linux.</summary>
+    <description>
+Htop is an ncurses based interactive process viewer for Linux.
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="service.downloadmanager.rTorrent"
+       name="rTorrent"
+       version="4.3.2"
+       provider-name="Daniel Forsberg (daniel.forsberg1@gmail.com)">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+    <import addon="tools.php" version="0.0.0" />
+    <import addon="tools.dtach" version="0.0.0" />
+  </requires>
+  <extension point="xbmc.service" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>rTorrent: This is the free BitTorrent client rtorrent packed for OpenELEC</summary>
+    <description>
+rTorrent BitTorrent client can handel multipel watch dirs and post actions. [CR][CR]After changing settings you need to disable and re-enable the addon. [CR][CR]Hove this addon is intended to work: [CR][CR]You add base dirs. [CR]torrents: /storage/downloads/torrents/ [CR]downloads: /storage/downloads [CR]comlete: /storege [CR][CR]then you add watch dirs separated by: ,[CR]videos,tvshows,music [CR][CR]Wath will happen then is: [CR][CR]Directorys while be created if they dont exist: [CR]/storage/downloads/torrents/videos [CR]/storage/downloads/videos [CR]/storege/videos [CR][CR]then rtorrent while start dtached. [CR][CR]Now if you add a torrent file to: /storage/downloads/torrents/videos it while be downloaded to /storage/downloads/videos [CR][CR]On completion it while be Linked or Moved to /storege/videos [CR][CR]The same for every watch dir added... [CR][CR]Nice ha...
+    </description>
+    <disclaimer>
+
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+<addon id="tools.file"
+       name="file"
+       version="4.3.0"
+       provider-name="unofficial.addon.pro">
+  <requires>
+    <import addon="os.openelec.tv" version="5.0"/>
+    <import addon="xbmc.python" version="2.1.0"/>
+
+  </requires>
+  <extension point="xbmc.python.script" library="default.py">
+    <provides>executable</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary>file: File type identification utility</summary>
+    <description>
+These are the sources to Darwin's file(1) utility and master magic(4) file, now maintained by Christos Zoulas. The file(1) utility is used to determine the types of various files.
+    </description>
+    <disclaimer>
+this is an unofficial addon. please don't ask for support in openelec forum / irc channel
+    </disclaimer>
+    <platform>all</platform>
+  </extension>
+</addon>
+</addons>
