@@ -1,0 +1,26 @@
+7.0.0
+- rebuild for OpenELEC-7.0
+6.0.0
+- update to i2c-tools-3.1.2
+
+4.3.3
+- rebuild
+
+4.3.1
+- added python smbus library
+
+4.3.0
+- rebuild for addon api bump
+- update to i2c-tools-3.1.1
+
+4.1.0
+- rebuild for addon api bump
+
+4.0.1
+- rebuild
+
+4.0.0
+- rebuild for OpenELEC-4.0
+
+3.1.1
+- initial release

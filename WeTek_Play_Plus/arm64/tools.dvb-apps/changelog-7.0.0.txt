@@ -1,0 +1,28 @@
+7.0.0
+- rebuild for OpenELEC-7.0
+6.0.0
+- rebuild for OpenELEC-6.0
+4.3.3
+- rebuild
+
+4.3.1
+- rebuild
+
+4.3.0
+- rebuild for addon api bump
+- update to dvb-apps-3d43b28
+
+4.1.0
+- rebuild for addon api bump
+
+4.0.1
+- rebuild
+
+4.0.0
+- rebuild for OpenELEC-4.0
+
+3.0.1
+- static lib*
+
+2.1.0
+- initial build

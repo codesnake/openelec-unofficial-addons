@@ -1,0 +1,27 @@
+7.0.0
+- rebuild for OpenELEC-7.0
+6.0.1
+- Changed source to Github archive (official)
+- Enable huge feature set
+- Vim 7.4.979
+
+6.0.0
+- rebuild for OpenELEC-6.0
+
+4.3.4
+- rebuild
+
+4.3.2
+- added default vimrc /storage/.kodi/addons/tools.vim/share/vim/vimrc
+- added and enabled syntax highlighting 
+- added colors
+- added autoindent
+- added autoload
+- added plugins
+- changed install prefix to /storage/.kodi/addons/tools.vim
+
+4.3.1
+- rebuild
+
+4.3.0
+- Initial Release, vim-7.4
